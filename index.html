@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Student Admission Form</title>
+    <link href="ashishlabde1.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="header" align="center">
+        <span class="heading" style="cursor:pointer" onclick="location.href='https://daffodilvarsity.edu.bd/'">
+            Daffodil International University</span>
+    </div>
+    <br>
+    <br>
+
+    <div align="center">
+
+        <br>
+        <br>
+
+        <div id="content">
+            <br>
+
+            <span class="subHead">STUDENT ADMISSION FORM</span>
+            <br>
+            <br>
+            <hr />
+            <span class="Text">Personal Information</span>
+            <hr />
+            <br>
+
+            <form action="insert.php" method="post">
+
+                <br>
+
+                <input type="number" placeholder="ID" required size="40" class="cap" name="id"
+                    title="Enter ID" />
+                    <br>
+                    <br>
+
+
+                <input type="text" placeholder="First Name" required size="40" class="cap" name="fn"
+                    title="Enter First Name" />
+                <br>
+                <br>
+
+                <input type="text" placeholder="Last Name" required size="40" class="cap" name="ln"
+                    title="Enter Last Name" />
+                <br>
+                <br>
+
+                <input type="radio" value="Male" name="gender" title="Gender" required />
+                <span class="Text" title="Gender">Male</span>
+
+                <input type="radio" value="Female" name="gender" title="Gender" />
+                <span class="Text" title="Gender">Female</span>
+                <br>
+                <br>
+
+                <input type="date" name="dob" title="Enter Date of Birth" placeholder="Date of Birth" required
+                    value="dob"> <br>
+                <span class="Text">Eg. 31/12/2017</span>
+                <br>
+                <br>
+
+                <input type="text" name="number" title="Enter Contact No." placeholder="Contact Number" size="30" required
+                    maxlength="11" />
+                <br>
+                <br>
+
+                <input type="email" name="email" title="Enter Email-ID" placeholder="Email ID" size="40" required />
+                <br>
+                <br>
+                <textarea rows="2" cols="40" name="add" title="Enter Address"
+                    placeholder="Enter Address" required id="add" class="cap"></textarea>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <hr />
+                <span class="Text">Educational Information</span>
+                <hr />
+                <br>
+                <br>
+
+
+
+                <input type="text" name="clg_name" title="Enter Your College Name" placeholder="Your College Name" />
+                <br>
+                <br>
+
+                <select name="ac_year" required title="Select Academic Year">
+                    <option value="NA" selected disabled> ~ ~ Academic Year ~ ~</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+
+
+                <br>
+                <br>
+
+                <!-- SSC -->
+                <input type="text" placeholder="SSC Passing Year" title="Enter SSC Passing Year" name="ssc_py" required
+                    class="cap" size="20" />
+                <input type="text" placeholder="GPA Obtained" title="Enter GPA Obtained" name="ssc_gpa" id="ssc_gpa"
+                    size="14" />
+                <br>
+                <br>
+
+                <!-- HSC -->
+                <input type="text" placeholder="HSC Passing Year" title="Enter HSC Passing Year" name="hsc_py" required
+                    class="cap" size="20" />
+                <input type="text" placeholder="GPA Obtained" title="Enter GPA Obtained" name="hsc_gpa" id="hsc_gpa"
+                    size="14" />
+                <span class="Text">
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <span class="Text">General Information</span>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="form-group col-md-4">
+                        <select id="program_type" name="program" class="form-control" required="required">
+
+
+                            <option value="">Select Program Type</option>
+                            <option value="bachelor_program">Bachelor Program</option>
+                            <option value="masters_program">Masters Program</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <br>
+
+
+                    <div class="field-row">
+                        <label class="form-label">Program</label>
+
+                        <select name="dept" class="form-dropdown field" required="required" id="dept">
+
+                            <option value="">Select Program...</option>
+                            <option value="205">B.A (Hons.) in English</option>
+                            <option value="206">Bachelor of Business Administration (BBA)</option>
+                            <option value="209">B.Sc. in Computer Science &amp; Engineering (CSE)</option>
+                            <option value="211">B.Sc. in Computing &amp; Information System (CIS)</option>
+                            <option value="242">B.Sc. in Textile Engineering (TE)</option>
+                            <option value="215">B.S.S.(Hons) in Journalism, Media and Communication (JMC)</option>
+                            <option value="173">Bachelor of Laws (Honors)</option>
+                            <option value="217">LL.B. (Hons.)</option>
+                            <option value="218">Bachelor of Real Estate (BRE)</option>
+                            <option value="220">Bachelor of Pharmacy (B.Pharm)</option>
+                            <option value="221">B.Sc. (Hons) in Environmental Science &amp; Disaster Management (ESDM)
+                            </option>
+                            <option value="243">B.Sc. in Electrical and Electronic Engineering (EEE)</option>
+                            <option value="234">B.Sc. in Nutrition and Food Engineering (NFE)</option>
+                            <option value="236">B.Sc. in Software Engineering (SWE)</option>
+                            <option value="237">B.Sc. in Multimedia and Creative Technology (MCT)</option>
+                            <option value="227">Bachelor of Architecture (B. Arch.)</option>
+                            <option value="238">Bachelor of Tourism and Hospitality Management (BTHM)</option>
+                            <option value="239">Bachelor of Entrepreneurship (BE)</option>
+                            <option value="244">B.Sc. in Civil Engineering (CE)</option>
+                            <option value="232">B.Sc. in Information and Communication Engineering (ICE)</option>
+                            <option value="233">B.Sc. in Information Technology and Management (ITM)</option>
+                            <option value="241">BBS in E-Business Management</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="form-group">
+                        <select id="semester" name="semester" class="form-control" required="required">
+
+
+                            <option value="">Select Semester</option>
+                            <option value="Spring 22">Spring 22</option>
+                            <option value="Fall 22">Fall 22</option>
+                            <option value="Summer 22">Summer 22</option>
+                        </select>
+                    </div>
+
+
+
+                    <br>
+                    <br>
+
+                    <input type="submit" value="SAVE" />
+                    <input type="reset" value="CLEAR" />
+                </span>
+
+            </form>
+            <br>
+            <br>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>   
+
+        <div class="footer">
+            <p style="cursor:pointer" onclick="location.href='display all.html'">Display</p>
+          </div>
+
+        
+</body>
+
+</html>
